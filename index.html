@@ -593,14 +593,6 @@
         </div>
     </div>
 
-    <!-- Thank You Screen -->
-    <div id="successPage" class="fixed inset-0 bg-white z-[200] hidden flex flex-col items-center justify-center p-6 text-center">
-        <div class="w-20 h-20 bg-green-600 text-white rounded-full flex items-center justify-center text-3xl mb-8 shadow-lg animate-bounce">✓</div>
-        <h2 class="text-4xl font-black mb-4 uppercase tracking-tighter">Registration Successful!</h2>
-        <p class="text-xl text-gray-600 max-w-md mb-12">Thank you for your interest in ZAD Global School. Our team will contact you shortly.</p>
-        <button onclick="window.location.reload()" class="btn-primary">Back to Home</button>
-    </div>
-
     <!-- WhatsApp Floating Icon -->
     <a href="https://wa.me/918570060441" target="_blank" class="fixed bottom-6 right-6 z-[90] bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp text-3xl"></i>
@@ -610,8 +602,7 @@
         // Form & Modal Logic
         function handleFormSubmit(e) {
             e.preventDefault();
-            document.getElementById('successPage').classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
+            window.location.href = 'thankyou.html';
         }
 
         function openModal() {
