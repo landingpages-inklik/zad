@@ -220,7 +220,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-bg min-h-[85vh] flex items-center py-16">
+    <section class="hero-bg min-h-[85vh] flex items-center py-16 overflow-hidden">
         <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
             <div class="text-white space-y-8 reveal active">
                 <div class="inline-block bg-z-red px-6 py-2 rounded-lg font-black uppercase text-sm tracking-widest shadow-xl animate-pulse">
@@ -241,8 +241,8 @@
                 </div>
             </div>
 
-            <div class="bg-white p-10 rounded-[2.5rem] border-t-8 border-z-red shadow-2xl max-w-lg mx-auto w-full reveal active">
-                <h3 class="text-2xl font-black mb-8 text-z-black text-center tracking-tight">Admission Inquiry Form</h3>
+            <div class="bg-white p-8 lg:p-10 rounded-[2.5rem] border-t-8 border-z-red shadow-2xl max-w-lg mx-auto w-full reveal active">
+                <h3 class="text-2xl font-black mb-8 text-z-black text-center tracking-tight">Admission Enquiry Form</h3>
                 <form onsubmit="handleFormSubmit(event)" class="space-y-5">
                     <input type="text" placeholder="Name of Parent/Guardian *" required>
                     <input type="tel" placeholder="Contact Number *" required>
@@ -251,7 +251,7 @@
                         <input type="text" placeholder="Student's Name *" required>
                         <input type="text" placeholder="Student's Age *" required>
                     </div>
-                    <button type="submit" class="btn-primary w-full shadow-lg mt-6">Send Enquiry</button>
+                    <button type="submit" class="btn-primary w-full shadow-lg mt-6">Send</button>
                 </form>
             </div>
         </div>
@@ -280,19 +280,19 @@
         <div class="container mx-auto px-4 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12 text-center relative z-10">
             <div class="flex flex-col items-center">
                 <h3 class="text-4xl lg:text-6xl font-black text-white mb-4">12+</h3>
-                <div class="bg-z-red px-4 lg:px-6 py-2 font-black text-[10px] lg:text-xs uppercase tracking-widest text-white rounded">Years of Academic Excellence</div>
+                <div class="bg-z-red px-4 lg:px-6 py-2 font-black text-[10px] lg:text-xs uppercase tracking-widest text-white rounded min-h-[40px] flex items-center justify-center">Years of Academic Excellence</div>
             </div>
             <div class="flex flex-col items-center">
                 <h3 class="text-4xl lg:text-6xl font-black text-white mb-4">4</h3>
-                <div class="bg-z-red px-4 lg:px-6 py-2 font-black text-[10px] lg:text-xs uppercase tracking-widest text-white rounded">Well-Established Campuses</div>
+                <div class="bg-z-red px-4 lg:px-6 py-2 font-black text-[10px] lg:text-xs uppercase tracking-widest text-white rounded min-h-[40px] flex items-center justify-center">Well-Established Campuses</div>
             </div>
             <div class="flex flex-col items-center">
                 <h3 class="text-4xl lg:text-6xl font-black text-white mb-4">150+</h3>
-                <div class="bg-z-red px-4 lg:px-6 py-2 font-black text-[10px] lg:text-xs uppercase tracking-widest text-white rounded">Qualified Faculty & Staff</div>
+                <div class="bg-z-red px-4 lg:px-6 py-2 font-black text-[10px] lg:text-xs uppercase tracking-widest text-white rounded min-h-[40px] flex items-center justify-center">Qualified Faculty & Staff</div>
             </div>
             <div class="flex flex-col items-center">
                 <h3 class="text-4xl lg:text-6xl font-black text-white mb-4">2,500+</h3>
-                <div class="bg-z-red px-4 lg:px-6 py-2 font-black text-[10px] lg:text-xs uppercase tracking-widest text-white rounded">Students Learning with Us</div>
+                <div class="bg-z-red px-4 lg:px-6 py-2 font-black text-[10px] lg:text-xs uppercase tracking-widest text-white rounded min-h-[40px] flex items-center justify-center">Students Learning with Us</div>
             </div>
         </div>
     </section>
