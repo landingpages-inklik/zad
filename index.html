@@ -242,7 +242,7 @@
                 <h3 class="text-2xl font-black mb-8 text-z-black text-center tracking-tight">Admission Enquiry Form</h3>
                 <form onsubmit="handleFormSubmit(event)" class="space-y-5">
                     <input type="text" placeholder="Name of Parent/Guardian *" required>
-                    <input type="tel" placeholder="Contact Number *" required>
+                    <input type="tel" placeholder="Contact Number *" pattern="[0-9]{10}" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'')" required>
                     <input type="text" placeholder="Class Applying For *" required>
                     <input type="text" placeholder="Student's Name *" required>
                     <input type="text" placeholder="Student's Age *" required>
