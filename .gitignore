@@ -1,0 +1,5 @@
+deploy.bat
+deploy-with-git.bat
+.wrangler/
+.vscode/
+index - Copy.html

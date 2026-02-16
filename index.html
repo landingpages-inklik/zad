@@ -205,6 +205,46 @@
 
         #test-track { display: flex; transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
     </style>
+	
+	
+	<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "vi5ixfuh9n");
+</script>
+	
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17946390329"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17946390329');
+</script>
+
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '944569218011143');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=944569218011143&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 <body class="bg-white">
 
@@ -214,7 +254,6 @@
             <img src="https://zadglobalschool.edu.in/wp-content/uploads/2020/12/ZAD-Black.png" alt="ZAD Global School" class="h-20 md:h-16">
             <div class="hidden md:flex justify-center md:justify-end gap-4 md:gap-8 text-sm md:text-base font-bold text-gray-900">
                 <a href="tel:+918570060441" class="hover:text-z-red transition flex items-center gap-2"><i class="fas fa-phone text-z-red"></i>+91 8570060441</a>
-                <a href="mailto:zgsrohtak@gmail.com" class="hover:text-z-red transition hidden md:flex items-center gap-2"><i class="fas fa-envelope text-z-red"></i>zgsrohtak@gmail.com</a>
             </div>
         </div>
     </header>
@@ -240,14 +279,53 @@
 
             <div class="bg-white p-8 lg:p-10 rounded-[2.5rem] border-t-8 border-z-red shadow-2xl max-w-lg mx-auto w-full reveal active">
                 <h3 class="text-2xl font-black mb-8 text-z-black text-center tracking-tight">Admission Enquiry Form</h3>
-                <form onsubmit="handleFormSubmit(event)" class="space-y-5">
-                    <input type="text" placeholder="Name of Parent/Guardian *" required>
-                    <input type="tel" placeholder="Contact Number *" pattern="[0-9]{10}" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'')" required>
-                    <input type="text" placeholder="Class Applying For *" required>
-                    <input type="text" placeholder="Student's Name *" required>
-                    <input type="text" placeholder="Student's Age *" required>
-                    <button type="submit" class="btn-primary w-full shadow-lg mt-6">Send</button>
-                </form>
+<form onsubmit="handleFormSubmit(event)" class="space-y-5">
+
+    <input type="text" name="parent_name" placeholder="Name of Parent/Guardian *" required>
+
+    <input type="tel"
+           name="phone"
+           placeholder="Contact Number *"
+           pattern="[0-9]{10}"
+           maxlength="10"
+           oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+           required>
+
+    <select name="class_applying" required class="w-full p-3 border rounded">
+        <option value="">Select Class Applying For *</option>
+        <option>Pre-Nursery</option>
+        <option>Nursery</option>
+        <option>LKG</option>
+        <option>UKG</option>
+        <option>Class I</option>
+        <option>Class II</option>
+        <option>Class III</option>
+        <option>Class IV</option>
+        <option>Class V</option>
+        <option>Class VI</option>
+        <option>Class VII</option>
+        <option>Class VIII</option>
+        <option>Class IX</option>
+        <option>Class X</option>
+        <option>Class XI</option>
+    </select>
+
+    <input type="text" name="student_name" placeholder="Student's Name *" required>
+
+    <input type="text" name="age" placeholder="Student's Age *" required>
+
+	<!-- Hidden UTM + GCLID fields -->
+		<input type="hidden" name="utm_source"   id="utm_source">
+		<input type="hidden" name="utm_medium"   id="utm_medium">
+		<input type="hidden" name="utm_campaign" id="utm_campaign">
+		<input type="hidden" name="utm_term"     id="utm_term">
+		<input type="hidden" name="utm_content"  id="utm_content">
+		<input type="hidden" name="gclid"        id="gclid">
+		<input type="hidden" name="lead_timestamp" id="lead_timestamp">
+
+    <button type="submit" class="btn-primary w-full shadow-lg mt-6">Send</button>
+
+</form>
             </div>
         </div>
     </section>
@@ -577,7 +655,7 @@
     <footer class="bg-z-red py-20 text-white border-t-8 border-z-black">
         <div class="container mx-auto px-4 text-center">
             <img src="https://zadglobalschool.edu.in/wp-content/uploads/2020/12/ZGS-Logo-White.png" class="h-16 mx-auto mb-10" alt="ZAD Footer Logo">
-            <p class="text-base md:text-2xl lg:text-3xl font-bold italic mb-8 max-w-4xl mx-auto leading-relaxed">“Give your child the best start and exposure so they can perform well in school and beyond, and create a successful and stress-free future for themselves.”</p>
+            <p class="text-base md:text-2xl lg:text-3xl font-bold italic mb-8 max-w-4xl mx-auto leading-relaxed">“Give your child the best start and exposure so they can perform well in school and beyond, and create a successful and stress-free future for themselves”</p>
             <p class="text-sm opacity-60 uppercase tracking-[0.25em] font-black">© 2026 Zad Global School - Powered by <a href="https://inklikedu.com/" target="_blank" class="text-white font-bold hover:underline">INKLIKEDU</a></p>
         </div>
     </footer>
@@ -721,5 +799,94 @@
         window.addEventListener('resize', () => updatePosition(false));
         window.addEventListener('load', () => updatePosition(false));
     </script>
+	
+	<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var form = document.getElementById('admission-form');
+
+    if (form) {
+      form.addEventListener('submit', function () {
+        // Fire Google Ads conversion when the form is submitted
+        gtag_report_conversion();
+      });
+    }
+  });
+</script>
+
+<script>
+(function () {
+
+  const form = document.querySelector('form');
+  if (!form) return;
+
+  const WEBHOOK_URL = "https://webhooks.integrately.com/a/webhooks/12e1e43347124ed094db5e81dc9620ab";
+
+  // --------------------------------
+  // Capture UTMs & GCLID on page load
+  // --------------------------------
+  const params = new URLSearchParams(window.location.search);
+  const utmFields = [
+    'utm_source',
+    'utm_medium',
+    'utm_campaign',
+    'utm_term',
+    'utm_content',
+	'leadgen_id',
+    'gclid'
+  ];
+
+  utmFields.forEach(field => {
+    const value = params.get(field);
+    const input = document.getElementById(field);
+    if (value && input) {
+      input.value = value;
+    }
+  });
+
+  // --------------------------------
+  // Silent Submit → Format → Webhook
+  // --------------------------------
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Timestamp (YYYY-MM-DD HH:MM:SS)
+    const now = new Date();
+    const timestamp =
+      now.getFullYear() + '-' +
+      String(now.getMonth() + 1).padStart(2, '0') + '-' +
+      String(now.getDate()).padStart(2, '0') + ' ' +
+      String(now.getHours()).padStart(2, '0') + ':' +
+      String(now.getMinutes()).padStart(2, '0') + ':' +
+      String(now.getSeconds()).padStart(2, '0');
+
+    const ts = document.getElementById('lead_timestamp');
+    if (ts) ts.value = timestamp;
+
+    // Collect + sort form data
+    const formData = new FormData(form);
+    const payload = {};
+
+    [...formData.entries()]
+      .sort(([a], [b]) => a.localeCompare(b))
+      .forEach(([key, value]) => {
+        payload[key] = value;
+      });
+
+    // Send to Integrately webhook (JSON)
+    fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).catch(() => {
+      // Silent fail — no UI impact
+    });
+  });
+
+})();
+</script>
+
+
+
+	
 </body>
 </html>
